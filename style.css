@@ -127,11 +127,13 @@ border-radius: 0.25rem;
 font-weight: 500;
 box-shadow: 0 0.25rem hsla(154, 59%, 51%,0.6), 0 0.25rem rgba(0,0,0,0.2);
 margin-bottom: 1rem;
+transition: 0.3s;
+cursor: pointer;
 }
 
 #form button:active{
-cursor:grab;
 opacity: 0.75;
+
 }
 
 #form p{
