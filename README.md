@@ -2,6 +2,8 @@
 
 ![Design preview for the Intro component with sign up form coding challenge](./design/desktop-preview.jpg)
 
+Live preview:https://nafis2003.github.io/intro-component-sign-up-form/
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
