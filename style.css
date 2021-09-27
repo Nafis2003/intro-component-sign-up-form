@@ -47,7 +47,8 @@ margin-bottom: 1.5rem;
 
 #text-container p{
 font-size: 0.75rem;
-font-weight: 600;
+font-weight: 500;
+line-height: 1.25rem;
 }
 
 #form-container{
@@ -72,10 +73,12 @@ font-weight: 600;
 				padding: 1.5rem;
 				border-radius: 0.5rem;
 				width: 100%;
+				box-shadow: 0 0.5rem rgba(0,0,0,0.2);
 }
 
 #form .inputBox{
 margin: 1rem 0;
+position: relative;
 }
 
 .inputBox input {
@@ -85,12 +88,35 @@ border:2px solid rgba(185,182,211,0.3);
 border-radius: 0.25rem;
 font-size: 0.75rem;
 font-weight: 600;
-caret-color: var(--grayish-blue);
+caret-color: var(--blue);
 }
 
 input:focus{
-border-color: var(--grayish-blue);
+border-color: var(--blue);
 }
+
+.error input{
+				border:2px solid var(--red);
+				
+}
+
+.inputBox small{
+display: block;
+color: var(--red);
+text-align: right;
+}
+
+.inputBox img{
+position:absolute;
+top:1rem;
+right: 2rem;
+display: none;
+}
+
+.error img{
+display: inline;
+}
+
 
 #form button {
 background: var(--green);
@@ -103,12 +129,17 @@ box-shadow: 0 0.25rem hsla(154, 59%, 51%,0.6), 0 0.25rem rgba(0,0,0,0.2);
 margin-bottom: 1rem;
 }
 
+#form button:active{
+cursor:grab;
+opacity: 0.75;
+}
+
 #form p{
 color: var(--grayish-blue);
 width: 90%;
 display: block;
 margin:0 auto;
-font-size: 0.5rem;
+font-size: 0.75rem;
 }
 
 p span{
@@ -116,26 +147,29 @@ color: var(--red);
 font-weight: 600;
 }
 
-#box{
-	width: 500px;			
-	height: 500px;
-	background: blue;
-}
 
 @media(min-width:1000px){
-
-body{
-font-size: 2rem;
+body {
+background-image: url('images/bg-intro-desktop.png');
 }
 
 	main{
 	flex-direction: row;
 	text-align: left;
+	padding: 0;
 	}	
 	#text-container,#form-container{
 			   width: 50%;
 			   margin: 0 2rem;
 	}
+	
+	#text-container h1{
+					font-size: 2.5rem;
+	}
+	#form-container>div,#form button{
+	text-align: center;
+	}
+	
 }
 
 
